@@ -97,6 +97,26 @@ h2 { margin: 0; color: var(--ink); font-size: 15px; font-weight: 600; line-heigh
 .step-icon svg { width: 15px; height: 15px; }
 .guide-steps p { margin: 0; color: var(--ink); font-size: 9px; line-height: 1.9; }
 .guide-steps strong { font-weight: 600; }
+.social-section { padding: 19px 20px 21px; border-top: 1px solid var(--line); background: var(--card); transition: background-color .25s ease; }
+.social-heading { margin-bottom: 14px; text-align: center; }
+.social-heading h2 { font-size: 14px; }
+.social-heading > p:last-child { margin: 5px 0 0; color: var(--muted); font-size: 9px; line-height: 1.9; }
+.social-links { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 9px; }
+.social-link { display: flex; min-width: 0; min-height: 64px; align-items: center; gap: 8px; padding: 9px; border: 1px solid var(--line); border-radius: 12px; color: var(--ink); background: var(--surface); text-decoration: none; transition: transform .2s ease, border-color .2s ease, background-color .25s ease, box-shadow .2s ease; }
+.social-link:hover { transform: translateY(-2px); border-color: var(--gold-deep); box-shadow: 0 7px 18px rgb(32 40 43 / 7%); }
+.social-icon { display: grid; width: 34px; height: 34px; flex: 0 0 34px; place-items: center; border: 1px solid var(--line); border-radius: 10px; color: var(--gold-deep); background: var(--soft); }
+.social-icon > svg, .social-icon > i svg { display: block; width: 19px; height: 19px; }
+.social-copy { display: grid; min-width: 0; gap: 2px; }
+.social-copy strong { overflow: hidden; color: var(--ink); font-size: 9px; font-weight: 600; text-overflow: ellipsis; white-space: nowrap; }
+.social-copy small { overflow: hidden; color: var(--muted); font-size: 8px; text-overflow: ellipsis; white-space: nowrap; }
+.social-arrow { width: 13px; height: 13px; flex: 0 0 13px; margin-inline-start: auto; color: var(--muted); transition: transform .2s ease, color .2s ease; }
+.social-link:hover .social-arrow { transform: translate(-2px, -2px); color: var(--gold-deep); }
+.social-link-whatsapp { grid-column: 1 / -1; min-height: 70px; padding-inline: 12px; border-color: rgb(37 211 102 / 28%); background: linear-gradient(110deg, var(--surface), rgb(37 211 102 / 5%)); }
+.social-link-whatsapp:hover { border-color: #25a95a; box-shadow: 0 8px 22px rgb(37 169 90 / 12%); }
+.social-link-whatsapp .social-icon { border-color: rgb(37 211 102 / 26%); color: #168c49; background: rgb(37 211 102 / 12%); }
+:root[data-theme="dark"] .social-link-whatsapp .social-icon { color: #48df82; }
+.social-link-whatsapp .social-copy strong { font-size: 10px; }
+.social-link-whatsapp .social-copy small { font-size: 8px; }
 .card-footer { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px 12px; padding: 13px 20px 16px; color: var(--muted); font-size: 8px; line-height: 1.7; }
 .card-footer > span:last-child { direction: ltr; }
 .card-footer strong { color: var(--ink); font-weight: 500; }
@@ -107,7 +127,7 @@ h2 { margin: 0; color: var(--ink); font-size: 15px; font-weight: 600; line-heigh
   .review-card { border-radius: 28px; }
   .card-header { padding: 22px 25px 0; }
   .intro { padding-inline: 30px; }
-  .video-section, .suggestions, .google-section, .guide { padding-inline: 24px; }
+  .video-section, .suggestions, .google-section, .guide, .social-section { padding-inline: 24px; }
   .suggestion { padding: 14px; }
 }
 
@@ -116,7 +136,7 @@ h2 { margin: 0; color: var(--ink); font-size: 15px; font-weight: 600; line-heigh
   .review-card { border-radius: 19px; }
   .card-header { padding-inline: 16px; }
   .intro { padding-inline: 18px; }
-  .video-section, .suggestions, .google-section, .guide { padding-inline: 15px; }
+  .video-section, .suggestions, .google-section, .guide, .social-section { padding-inline: 15px; }
   .suggestion { padding: 10px; }
   .card-footer { padding-inline: 15px; }
 }

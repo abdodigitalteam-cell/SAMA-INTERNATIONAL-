@@ -1,8 +1,8 @@
-import { createIcons, Sun, Moon, MessageCircleHeart, Sparkles, Copy, ArrowUpLeft, ListChecks, Star, Send } from 'lucide';
+import { createIcons, Sun, Moon, MessageCircleHeart, Sparkles, Copy, ArrowUpLeft, ListChecks, Star, Send, Globe2 } from 'lucide';
 import './style.css';
 
 const THEME_KEY = 'sama-review-theme';
-const iconSet = { Sun, Moon, MessageCircleHeart, Sparkles, Copy, ArrowUpLeft, ListChecks, Star, Send };
+const iconSet = { Sun, Moon, MessageCircleHeart, Sparkles, Copy, ArrowUpLeft, ListChecks, Star, Send, Globe2 };
 
 function renderIcons() {
   createIcons({ icons: iconSet, attrs: { 'stroke-width': 1.8 } });
