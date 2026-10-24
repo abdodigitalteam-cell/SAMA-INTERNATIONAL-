@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#1B2529" />
+    <meta name="description" content="اختر اقتراحًا وعدّله ليعبّر عن تجربتك مع سما العالمية، ثم شاركه بنفسك على Google." />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="رأيك يفرق معانا | SAMA INTERNATIONAL" />
+    <meta property="og:description" content="اختر اقتراحًا وعدّله ليعبّر عن تجربتك، ثم شاركه بنفسك على Google." />
+    <meta property="og:image" content="/logo.png" />
+    <meta property="og:locale" content="ar_AR" />
+    <meta name="color-scheme" content="light dark" />
+    <link rel="icon" type="image/png" href="/logo.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <title>رأيك يفرق معانا | SAMA INTERNATIONAL</title>
+  </head>
+  <body>
+    <main class="page-shell">
+      <article class="review-card" aria-labelledby="page-title">
+        <header class="card-header">
+          <img src="/logo.png" alt="شعار شركة سما العالمية للأدوات الصحية" width="72" height="72" />
+          <button class="theme-toggle" id="theme-toggle" type="button" aria-label="تفعيل المظهر الفاتح" title="تغيير المظهر">
+            <i data-lucide="sun" aria-hidden="true"></i>
+          </button>
+        </header>
+
+        <section class="intro">
+          <span class="eyebrow"><span class="eyebrow-dot"></span> SAMA INTERNATIONAL</span>
+          <h1 id="page-title">رأيك يفرق معانا <span aria-hidden="true">⭐</span></h1>
+          <p>كلمتين من تجربتك يفرقوا معانا. اختار اقتراح وعدّله عشان يعبر عن رأيك الحقيقي.</p>
+        </section>
+
+        <section class="video-section" aria-labelledby="video-title">
+          <div class="video-heading">
+            <p class="section-kicker">SAMA INTERNATIONAL</p>
+            <h2 id="video-title">اتعرّف على سما العالمية</h2>
+            <p>شركة سما العالمية للأدوات الصحية — شاهد نبذة قصيرة عن الشركة ومنتجاتها.</p>
+          </div>
+          <div class="video-frame">
+            <video
+              id="company-video"
+              controls
+              playsinline
+              preload="metadata"
+              poster="/logo.png"
+              aria-label="فيديو تعريفي عن شركة سما العالمية للأدوات الصحية"
+            >
+              <source src="/videos/sama-international.mp4" type="video/mp4" />
+              عذرًا، متصفحك لا يدعم تشغيل فيديو HTML5.
+            </video>
+          </div>
+          <p class="video-error" id="video-error" role="status" aria-live="polite" hidden>تعذر تحميل الفيديو. يرجى المحاولة مرة أخرى لاحقًا.</p>
+        </section>
+
+        <section class="suggestions" aria-labelledby="suggestions-title">
+          <div class="section-title">
+            <div>
+              <p class="section-kicker">اختار وعدّل براحتك</p>
+              <h2 id="suggestions-title">اقتراحات تساعدك تبدأ</h2>
+            </div>
+            <i data-lucide="message-circle-heart" aria-hidden="true"></i>
+          </div>
+          <p class="suggestions-note">دي أمثلة اختيارية فقط — راجع كل كلمة وعدّلها لتناسب تجربتك قبل النسخ.</p>
+
+          <div class="suggestion-list">
+            <article class="suggestion" data-suggestion>
+              <div class="suggestion-top"><span>اقتراح ١</span><i data-lucide="sparkles" aria-hidden="true"></i></div>
+              <label class="visually-hidden" for="suggestion-1">عدّل الاقتراح الأول ليعبر عن تجربتك</label>
+              <textarea id="suggestion-1" rows="3" maxlength="500">التعامل كان محترم جدًا، والخدمة كويسة، وشكرًا لكل القائمين على سما العالمية ❤️</textarea>
+              <button class="copy-button" type="button" data-copy>
+                <i data-lucide="copy" aria-hidden="true"></i><span>نسخ التعليق</span>
+              </button>
+            </article>
+            <article class="suggestion" data-suggestion>
+              <div class="suggestion-top"><span>اقتراح ٢</span><i data-lucide="sparkles" aria-hidden="true"></i></div>
+              <label class="visually-hidden" for="suggestion-2">عدّل الاقتراح الثاني ليعبر عن تجربتك</label>
+              <textarea id="suggestion-2" rows="3" maxlength="500">مكان محترم والتعامل فيه كويس، بالتوفيق دايمًا لشركة سما العالمية 🌟</textarea>
+              <button class="copy-button" type="button" data-copy>
+                <i data-lucide="copy" aria-hidden="true"></i><span>نسخ التعليق</span>
+              </button>
+            </article>
+            <article class="suggestion" data-suggestion>
+              <div class="suggestion-top"><span>اقتراح ٣</span><i data-lucide="sparkles" aria-hidden="true"></i></div>
+              <label class="visually-hidden" for="suggestion-3">عدّل الاقتراح الثالث ليعبر عن تجربتك</label>
+              <textarea id="suggestion-3" rows="3" maxlength="500">تجربة كويسة، والناس هناك متعاونين ومحترمين. ربنا يوفقكم دايمًا.</textarea>
+              <button class="copy-button" type="button" data-copy>
+                <i data-lucide="copy" aria-hidden="true"></i><span>نسخ التعليق</span>
+              </button>
+            </article>
+            <article class="suggestion" data-suggestion>
+              <div class="suggestion-top"><span>اقتراح ٤</span><i data-lucide="sparkles" aria-hidden="true"></i></div>
+              <label class="visually-hidden" for="suggestion-4">عدّل الاقتراح الرابع ليعبر عن تجربتك</label>
+              <textarea id="suggestion-4" rows="3" maxlength="500">بشكر فريق سما العالمية على حسن التعامل والاهتمام، وإن شاء الله دايمًا من نجاح لنجاح.</textarea>
+              <button class="copy-button" type="button" data-copy>
+                <i data-lucide="copy" aria-hidden="true"></i><span>نسخ التعليق</span>
+              </button>
+            </article>
+            <article class="suggestion" data-suggestion>
+              <div class="suggestion-top"><span>اقتراح ٥</span><i data-lucide="sparkles" aria-hidden="true"></i></div>
+              <label class="visually-hidden" for="suggestion-5">عدّل الاقتراح الخامس ليعبر عن تجربتك</label>
+              <textarea id="suggestion-5" rows="3" maxlength="500">شركة تستحق التقدير على التعامل المحترم والاهتمام بالعملاء، بالتوفيق ليكم يا رب.</textarea>
+              <button class="copy-button" type="button" data-copy>
+                <i data-lucide="copy" aria-hidden="true"></i><span>نسخ التعليق</span>
+              </button>
+            </article>
+            <article class="suggestion" data-suggestion>
+              <div class="suggestion-top"><span>اقتراح ٦</span><i data-lucide="sparkles" aria-hidden="true"></i></div>
+              <label class="visually-hidden" for="suggestion-6">عدّل الاقتراح السادس ليعبر عن تجربتك</label>
+              <textarea id="suggestion-6" rows="3" maxlength="500">سعيد بالتعامل معاكم، وشكرًا على المجهود والذوق في التعامل. ربنا يكرمكم ويوفقكم.</textarea>
+              <button class="copy-button" type="button" data-copy>
+                <i data-lucide="copy" aria-hidden="true"></i><span>نسخ التعليق</span>
+              </button>
+            </article>
+          </div>
+        </section>
+
+        <section class="google-section" aria-labelledby="google-title">
+          <a class="google-button" id="google-link" href="https://search.google.com/local/writereview?placeid=ChIJx34nbzg9WBQRkFQwpJTQ0y0" target="_blank" rel="noopener noreferrer">
+            <span>⭐ انتقل لكتابة تقييمك</span>
+            <i data-lucide="arrow-up-left" aria-hidden="true"></i>
+          </a>
+          <h2 id="google-title">خطوتك الجاية على Google</h2>
+          <p>اختار عدد النجوم المناسب، والصق تعليقك وراجعه، وبعدها اضغط نشر بنفسك. لا نرسل تقييمك تلقائيًا.</p>
+          <p class="status-message" id="status-message" role="status" aria-live="polite"></p>
+        </section>
+
+        <section class="guide" aria-labelledby="guide-title">
+          <div class="guide-heading">
+            <i data-lucide="list-checks" aria-hidden="true"></i>
+            <h2 id="guide-title">إزاي تقيّمنا؟</h2>
+          </div>
+          <ol class="guide-steps">
+            <li><span class="step-icon"><i data-lucide="copy" aria-hidden="true"></i></span><p>اختار تعليق مناسب لتجربتك واضغط <strong>نسخ التعليق</strong>.</p></li>
+            <li><span class="step-icon"><i data-lucide="star" aria-hidden="true"></i></span><p>اضغط <strong>انتقل لكتابة تقييمك</strong> واختار النجوم داخل Google.</p></li>
+            <li><span class="step-icon"><i data-lucide="send" aria-hidden="true"></i></span><p>الصق تعليقك، راجعه، وبعدها اضغط <strong>نشر</strong>.</p></li>
+          </ol>
+        </section>
+
+        <footer class="card-footer">
+          <span dir="ltr">© SAMA INTERNATIONAL</span>
+          <span>Designed &amp; Developed by <strong>عبدالرحمن أحمد</strong></span>
+        </footer>
+      </article>
+    </main>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
